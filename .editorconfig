@@ -10,8 +10,12 @@ insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{js,py}]
+[*.{js,py,html}]
 charset = utf-8
+
+[*.html]
+indent_style = tab
+indent_size = 4
 
 # 4 space indentation
 [*.py]

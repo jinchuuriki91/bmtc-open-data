@@ -9,6 +9,9 @@ djangorestframework = "*"
 requests = "*"
 "psycopg2" = "*"
 gunicorn = "*"
+envparse = "*"
+django-oauth-toolkit = "*"
+django-cors-middleware = "*"
 
 [dev-packages]
 ipython = "*"
