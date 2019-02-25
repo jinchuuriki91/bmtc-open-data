@@ -12,6 +12,8 @@ gunicorn = "*"
 envparse = "*"
 django-oauth-toolkit = "*"
 django-cors-middleware = "*"
+django-safedelete = "*"
+"beautifulsoup4" = "*"
 
 [dev-packages]
 ipython = "*"

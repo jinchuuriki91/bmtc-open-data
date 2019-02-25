@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import logging
 from envparse import env
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,8 +27,12 @@ SECRET_KEY = env('SECRET_KEY', cast=str, default="DUMMY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG', cast=bool, default=False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.json("ALLOWED_HOSTS", default=[])
 
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s',
+    datefmt='[%d/%b/%Y %H:%M:%S]')
 
 # Application definition
 
@@ -41,6 +46,7 @@ INSTALLED_APPS = [
     'oauth2_provider',
     'rest_framework',
     'corsheaders',
+    'safedelete',
 ]
 
 MIDDLEWARE = [
