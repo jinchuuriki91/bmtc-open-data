@@ -1,24 +1,22 @@
 [[source]]
-url = "https://pypi.org/simple"
+url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
 [packages]
-django = ">=2.1"
-djangorestframework = "*"
-requests = "*"
-"psycopg2" = "*"
+Django = "*"
+psycopg2 = "*"
 gunicorn = "*"
+django-cors-headers = "*"
+djangorestframework = "*"
 envparse = "*"
-django-oauth-toolkit = "*"
-django-cors-middleware = "*"
-django-safedelete = "*"
-"beautifulsoup4" = "*"
-googlemaps = "*"
+dj-database-url = "*"
+jedi = "==0.17.2"
+django-heroku = "*"
 
 [dev-packages]
-ipython = "*"
-"flake8" = "*"
+flake8 = "*"
+ipython = "==7.19.0"
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"
