@@ -16,7 +16,7 @@ django-heroku = "*"
 
 [dev-packages]
 flake8 = "*"
-ipython = "==7.19.0"
+ipython = "==7.31.1"
 
 [requires]
 python_version = "3.8"
